@@ -72,6 +72,7 @@ public class Tests {
         );
         LocalDate now = LocalDate.parse("2017-10-15");
         List<Alerts> alerts = UserService.getAlertsByTradeListAndDate(this.trades, now);
+        System.out.println(alerts);
         Assert.assertEquals(expected.toString(), alerts.toString());
     }
 
